@@ -109,23 +109,7 @@ btn_deletar.grid(column=3,row=8)
 btn_modificar.grid(column=4,row=8)
 
 
-def inserir():
-    if vid.get()=="" or vnomeproduto.get()=="" or vdescricao.get()=="" or vregistro.get()=="" or vquantiloja.get()=="" or vquantiestoque.get()=="" or vfone()=="":
-       messagebox.showinfo(title="ERRO", message="Digite todos os dados")
-       return
-    tv.insert("","end",values=(vid.get(),vnomeproduto.get(),vdescricao.get(),vregistro.get(),vquantiloja.get(),vquantiestoque.get(),vfone.get()))
-    vid.delete(0,END)
-    vnomeproduto.delete(0,END)
-    vdescricao.delete(0,END)
-    vregistro.delete(0,END)
-    vquantiloja.delete(0,END)
-    vquantiestoque.delete(0,END)
-    vfone.delete(0,END)
-    vid.focus()
-
-
 tv.grid(column=0,row=7,columnspan=7)
-
 
 
 app.mainloop()
