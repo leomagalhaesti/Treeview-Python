@@ -3,7 +3,7 @@ from tkinter import ttk
 from tkinter import messagebox 
 
 def inserir():
-    if vid.get()=="" or vnomeproduto.get()=="" or vdescricao.get()=="" or vregistro.get()=="" or vquantiloja.get()=="" or vquantiestoque.get()=="" or vfone.get()=="":
+    if vid.get()=="" or vnomeproduto.get()=="" or vdescricao.get()=="" or vregistro.get()=="" or vquantiloja.get()=="" or vquantiestoque.get()=="" or vfone.et()=="":
        messagebox.showinfo(title="ERRO", message="Digite todos os dados")
        return
     tv.insert("","end",values=(vid.get(),vnomeproduto.get(),vdescricao.get(),vregistro.get(),vquantiloja.get(),vquantiestoque.get(),vfone.get()))
